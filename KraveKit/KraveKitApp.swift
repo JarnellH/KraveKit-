@@ -2,7 +2,7 @@
 //  KraveKitApp.swift
 //  KraveKit
 //
-//  Created by Sam Licona on 7/19/24.
+//  Created by Jarnell Hayes on 7/19/24.
 //
 
 import SwiftUI

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8304B5A2C4F25A70017EA96 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8304B592C4F25A70017EA96 /* RecipeDetailView.swift */; };
 		C8387CCE2C4B1984008C9D47 /* KraveKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CCD2C4B1984008C9D47 /* KraveKitApp.swift */; };
 		C8387CD02C4B1984008C9D47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CCF2C4B1984008C9D47 /* ContentView.swift */; };
 		C8387CD22C4B1985008C9D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8387CD12C4B1985008C9D47 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		C8387CDF2C4B1985008C9D47 /* KraveKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CDE2C4B1985008C9D47 /* KraveKitTests.swift */; };
 		C8387CE92C4B1985008C9D47 /* KraveKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CE82C4B1985008C9D47 /* KraveKitUITests.swift */; };
 		C8387CEB2C4B1985008C9D47 /* KraveKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CEA2C4B1985008C9D47 /* KraveKitUITestsLaunchTests.swift */; };
+		C8387CF82C4EC77F008C9D47 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CF72C4EC77F008C9D47 /* RecipeView.swift */; };
+		C8387CFE2C4EE5A1008C9D47 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CFD2C4EE5A1008C9D47 /* RecipeListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8304B592C4F25A70017EA96 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		C8387CCA2C4B1984008C9D47 /* KraveKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KraveKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8387CCD2C4B1984008C9D47 /* KraveKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraveKitApp.swift; sourceTree = "<group>"; };
 		C8387CCF2C4B1984008C9D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		C8387CE42C4B1985008C9D47 /* KraveKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KraveKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8387CE82C4B1985008C9D47 /* KraveKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraveKitUITests.swift; sourceTree = "<group>"; };
 		C8387CEA2C4B1985008C9D47 /* KraveKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraveKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8387CF72C4EC77F008C9D47 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		C8387CFD2C4EE5A1008C9D47 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +102,15 @@
 			children = (
 				C8387CCD2C4B1984008C9D47 /* KraveKitApp.swift */,
 				C8387CCF2C4B1984008C9D47 /* ContentView.swift */,
+				C8387CF72C4EC77F008C9D47 /* RecipeView.swift */,
+				C8304B592C4F25A70017EA96 /* RecipeDetailView.swift */,
+				C8387CFD2C4EE5A1008C9D47 /* RecipeListViewModel.swift */,
 				C8387CD12C4B1985008C9D47 /* Assets.xcassets */,
 				C8387CD32C4B1985008C9D47 /* Preview Content */,
 			);
-			path = KraveKit;
-			sourceTree = "<group>";
+			name = KraveKit;
+			path = "/Users/samlicona/Desktop/IOS Apprenticeship/KraveKit/KraveKit";
+			sourceTree = "<absolute>";
 		};
 		C8387CD32C4B1985008C9D47 /* Preview Content */ = {
 			isa = PBXGroup;
@@ -257,7 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8387CF82C4EC77F008C9D47 /* RecipeView.swift in Sources */,
+				C8304B5A2C4F25A70017EA96 /* RecipeDetailView.swift in Sources */,
 				C8387CD02C4B1984008C9D47 /* ContentView.swift in Sources */,
+				C8387CFE2C4EE5A1008C9D47 /* RecipeListViewModel.swift in Sources */,
 				C8387CCE2C4B1984008C9D47 /* KraveKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
