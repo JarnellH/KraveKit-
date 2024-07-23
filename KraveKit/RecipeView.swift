@@ -17,13 +17,17 @@ struct RecipeView: View {
         NavigationView{
             
             List{
+
                 ForEach(viewModel.meals , id: \.idMeal){meal in
-                    HStack{
-                        
-                        AsyncImage(url: URL(string:meal.strMealThumb), scale: 5.0).frame(width: 130 , height: 70).aspectRatio(contentMode: .fill).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-                        Text(meal.strMeal).bold()
-                        
-                       
+                    NavigationLink(destination:DessertDetailView(idMeal: meal.idMeal)){
+                        HStack{
+                            
+                            AsyncImage(url: URL(string:meal.strMealThumb), scale: 5.0).frame(width: 130 , height: 70).aspectRatio(contentMode: .fill).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            Text(meal.strMeal).bold()
+                            
+                            
+                            
+                        }
                     }
                     .padding(5)
                 }
