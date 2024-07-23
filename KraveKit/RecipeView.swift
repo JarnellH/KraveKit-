@@ -22,7 +22,7 @@ struct RecipeView: View {
                     NavigationLink(destination:DessertDetailView(idMeal: meal.idMeal)){
                         HStack{
                             
-                            AsyncImage(url: URL(string:meal.strMealThumb), scale: 5.0).frame(width: 130 , height: 70).aspectRatio(contentMode: .fill).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            AsyncImage(url: URL(string:meal.strMealThumb), scale: 5.0).frame(width: 130 , height: 70).aspectRatio(contentMode: .fit).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                             Text(meal.strMeal).bold()
                             
                             
@@ -33,7 +33,7 @@ struct RecipeView: View {
                 }
                 
             }
-            .navigationTitle("Desserts")
+            .navigationTitle("Desserts 🥮")
             .onAppear{
                 viewModel.getDesserts()
             }
