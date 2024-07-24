@@ -9,7 +9,6 @@ import SwiftUI
 
 struct RecipeView: View {
     
-    @State var searchInput = ""
     @StateObject var viewModel = RecipeListViewModel()
     
     
@@ -24,9 +23,6 @@ struct RecipeView: View {
                             
                             AsyncImage(url: URL(string:meal.strMealThumb), scale: 5.0).frame(width: 130 , height: 70).aspectRatio(contentMode: .fit).shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                             Text(meal.strMeal).bold()
-                            
-                            
-                            
                         }
                     }
                     .padding(5)
@@ -34,7 +30,7 @@ struct RecipeView: View {
                 
             }
             .navigationTitle("Desserts 🥮")
-            .onAppear{
+            .task{
                 viewModel.getDesserts()
             }
         }

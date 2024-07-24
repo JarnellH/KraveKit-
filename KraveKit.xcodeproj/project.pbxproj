@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8304B5A2C4F25A70017EA96 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8304B592C4F25A70017EA96 /* RecipeDetailView.swift */; };
-		C8304B5C2C4F2D250017EA96 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8304B5B2C4F2D250017EA96 /* DessertDetailView.swift */; };
-		C8304B5E2C4F33090017EA96 /* DessertDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8304B5D2C4F33090017EA96 /* DessertDetailModel.swift */; };
-		C8387CCE2C4B1984008C9D47 /* KraveKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CCD2C4B1984008C9D47 /* KraveKitApp.swift */; };
 		C8387CD02C4B1984008C9D47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CCF2C4B1984008C9D47 /* ContentView.swift */; };
 		C8387CD22C4B1985008C9D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8387CD12C4B1985008C9D47 /* Assets.xcassets */; };
 		C8387CD52C4B1985008C9D47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8387CD42C4B1985008C9D47 /* Preview Assets.xcassets */; };
 		C8387CDF2C4B1985008C9D47 /* KraveKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CDE2C4B1985008C9D47 /* KraveKitTests.swift */; };
 		C8387CE92C4B1985008C9D47 /* KraveKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CE82C4B1985008C9D47 /* KraveKitUITests.swift */; };
 		C8387CEB2C4B1985008C9D47 /* KraveKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CEA2C4B1985008C9D47 /* KraveKitUITestsLaunchTests.swift */; };
-		C8387CF82C4EC77F008C9D47 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CF72C4EC77F008C9D47 /* RecipeView.swift */; };
-		C8387CFE2C4EE5A1008C9D47 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8387CFD2C4EE5A1008C9D47 /* RecipeListViewModel.swift */; };
+		C84A5BA72C51B64E008E5BEB /* KraveKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84A5BA62C51B64E008E5BEB /* KraveKitApp.swift */; };
+		C8B8C1602C51A86D004EE897 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF201B2C516FDA00ACF2A4 /* Alert.swift */; };
+		C8C739E72C51AADF00ACB892 /* KraveKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C739E62C51AADF00ACB892 /* KraveKitError.swift */; };
+		C8D649482C51B7C200AACDA2 /* DessertDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D649472C51B7C200AACDA2 /* DessertDetailModel.swift */; };
+		C8D6494A2C51B7DC00AACDA2 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D649492C51B7DC00AACDA2 /* DessertDetailView.swift */; };
+		C8D6494C2C51B7F300AACDA2 /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D6494B2C51B7F300AACDA2 /* RecipeListViewModel.swift */; };
+		C8D6494E2C51B80600AACDA2 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D6494D2C51B80600AACDA2 /* RecipeView.swift */; };
+		C8DB0A6F2C517DCA00B6EF7C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DB0A6E2C517DCA00B6EF7C /* Meal.swift */; };
+		C8DB0A712C517E2900B6EF7C /* DessertDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DB0A702C517E2900B6EF7C /* DessertDetail.swift */; };
+		C8DB0A7A2C517F6300B6EF7C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DB0A792C517F6300B6EF7C /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C8304B592C4F25A70017EA96 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
-		C8304B5B2C4F2D250017EA96 /* DessertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
-		C8304B5D2C4F33090017EA96 /* DessertDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailModel.swift; sourceTree = "<group>"; };
 		C8387CCA2C4B1984008C9D47 /* KraveKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KraveKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8387CCD2C4B1984008C9D47 /* KraveKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraveKitApp.swift; sourceTree = "<group>"; };
 		C8387CCF2C4B1984008C9D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C8387CD12C4B1985008C9D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8387CD42C4B1985008C9D47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,8 +52,16 @@
 		C8387CE42C4B1985008C9D47 /* KraveKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KraveKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8387CE82C4B1985008C9D47 /* KraveKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraveKitUITests.swift; sourceTree = "<group>"; };
 		C8387CEA2C4B1985008C9D47 /* KraveKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraveKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C8387CF72C4EC77F008C9D47 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
-		C8387CFD2C4EE5A1008C9D47 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		C84A5BA62C51B64E008E5BEB /* KraveKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KraveKitApp.swift; sourceTree = "<group>"; };
+		C8C739E62C51AADF00ACB892 /* KraveKitError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KraveKitError.swift; sourceTree = "<group>"; };
+		C8CF201B2C516FDA00ACF2A4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C8D649472C51B7C200AACDA2 /* DessertDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertDetailModel.swift; sourceTree = "<group>"; };
+		C8D649492C51B7DC00AACDA2 /* DessertDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
+		C8D6494B2C51B7F300AACDA2 /* RecipeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		C8D6494D2C51B80600AACDA2 /* RecipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		C8DB0A6E2C517DCA00B6EF7C /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		C8DB0A702C517E2900B6EF7C /* DessertDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetail.swift; sourceTree = "<group>"; };
+		C8DB0A792C517F6300B6EF7C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +112,11 @@
 		C8387CCC2C4B1984008C9D47 /* KraveKit */ = {
 			isa = PBXGroup;
 			children = (
-				C8387CCD2C4B1984008C9D47 /* KraveKitApp.swift */,
+				C8DB0A722C517E7C00B6EF7C /* Utilities */,
+				C8DB0A6D2C517D9E00B6EF7C /* Model */,
 				C8387CCF2C4B1984008C9D47 /* ContentView.swift */,
-				C8387CF72C4EC77F008C9D47 /* RecipeView.swift */,
-				C8304B5B2C4F2D250017EA96 /* DessertDetailView.swift */,
-				C8304B592C4F25A70017EA96 /* RecipeDetailView.swift */,
-				C8387CFD2C4EE5A1008C9D47 /* RecipeListViewModel.swift */,
-				C8304B5D2C4F33090017EA96 /* DessertDetailModel.swift */,
+				C84A5BA62C51B64E008E5BEB /* KraveKitApp.swift */,
+				C8DB0A6A2C517B9200B6EF7C /* Screens */,
 				C8387CD12C4B1985008C9D47 /* Assets.xcassets */,
 				C8387CD32C4B1985008C9D47 /* Preview Content */,
 			);
@@ -141,6 +147,68 @@
 				C8387CEA2C4B1985008C9D47 /* KraveKitUITestsLaunchTests.swift */,
 			);
 			path = KraveKitUITests;
+			sourceTree = "<group>";
+		};
+		C8DB0A6A2C517B9200B6EF7C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C8DB0A6C2C517BE400B6EF7C /* DessertDetailView */,
+				C8DB0A6B2C517BD900B6EF7C /* RecipeView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C8DB0A6B2C517BD900B6EF7C /* RecipeView */ = {
+			isa = PBXGroup;
+			children = (
+				C8D6494D2C51B80600AACDA2 /* RecipeView.swift */,
+				C8D6494B2C51B7F300AACDA2 /* RecipeListViewModel.swift */,
+			);
+			path = RecipeView;
+			sourceTree = "<group>";
+		};
+		C8DB0A6C2C517BE400B6EF7C /* DessertDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				C8D649492C51B7DC00AACDA2 /* DessertDetailView.swift */,
+				C8D649472C51B7C200AACDA2 /* DessertDetailModel.swift */,
+			);
+			path = DessertDetailView;
+			sourceTree = "<group>";
+		};
+		C8DB0A6D2C517D9E00B6EF7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8DB0A6E2C517DCA00B6EF7C /* Meal.swift */,
+				C8DB0A702C517E2900B6EF7C /* DessertDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C8DB0A722C517E7C00B6EF7C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C8DB0A782C517ED300B6EF7C /* Managers */,
+				C8DB0A732C517E9800B6EF7C /* Alerts */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C8DB0A732C517E9800B6EF7C /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				C8C739E62C51AADF00ACB892 /* KraveKitError.swift */,
+				C8CF201B2C516FDA00ACF2A4 /* Alert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		C8DB0A782C517ED300B6EF7C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C8DB0A792C517F6300B6EF7C /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,13 +341,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8387CF82C4EC77F008C9D47 /* RecipeView.swift in Sources */,
-				C8304B5A2C4F25A70017EA96 /* RecipeDetailView.swift in Sources */,
-				C8304B5C2C4F2D250017EA96 /* DessertDetailView.swift in Sources */,
+				C8B8C1602C51A86D004EE897 /* Alert.swift in Sources */,
+				C8D649482C51B7C200AACDA2 /* DessertDetailModel.swift in Sources */,
+				C8D6494A2C51B7DC00AACDA2 /* DessertDetailView.swift in Sources */,
 				C8387CD02C4B1984008C9D47 /* ContentView.swift in Sources */,
-				C8387CFE2C4EE5A1008C9D47 /* RecipeListViewModel.swift in Sources */,
-				C8304B5E2C4F33090017EA96 /* DessertDetailModel.swift in Sources */,
-				C8387CCE2C4B1984008C9D47 /* KraveKitApp.swift in Sources */,
+				C84A5BA72C51B64E008E5BEB /* KraveKitApp.swift in Sources */,
+				C8D6494E2C51B80600AACDA2 /* RecipeView.swift in Sources */,
+				C8DB0A7A2C517F6300B6EF7C /* NetworkManager.swift in Sources */,
+				C8D6494C2C51B7F300AACDA2 /* RecipeListViewModel.swift in Sources */,
+				C8DB0A6F2C517DCA00B6EF7C /* Meal.swift in Sources */,
+				C8C739E72C51AADF00ACB892 /* KraveKitError.swift in Sources */,
+				C8DB0A712C517E2900B6EF7C /* DessertDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

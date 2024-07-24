@@ -75,13 +75,13 @@ struct DessertDetailView: View {
         .shadow(radius: 40)
         Spacer()
         
-            //Change to task 
-            .onAppear{
+        
+            .task{
                 viewModel.getDessertDetails(idMeal: idMeal)
             }
     }
 }
 
 #Preview {
-    DessertDetailView(idMeal:"Place")
+    DessertDetailView(idMeal:"Placeholder")
 }
