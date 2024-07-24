@@ -5,9 +5,7 @@
 //  Created by Jarnell Hayes on 7/22/24.
 //
 
-import SwiftUI
 import Foundation
-
 
 struct Meal: Hashable , Codable{
     let strMeal: String
@@ -19,14 +17,13 @@ struct MealResponse: Codable{
     let meals: [Meal]
 }
 
-
+//Refactor for async/await
 class RecipeListViewModel: ObservableObject {
     @Published var meals: [Meal] = []
     @Published var error: Error?
 
-
     func getDesserts() {
-        
+    
         error = nil
 
         let urlString = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert"

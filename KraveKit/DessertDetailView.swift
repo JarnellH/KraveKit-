@@ -15,20 +15,15 @@ struct DessertDetailView: View {
     
     var body: some View {
         
-
-        
         //Header
         VStack(alignment: .leading , spacing: 5.0){
-            Text("Details of this Dessert").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(.title).padding()
-            
-
-
+            Text("Recipe").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(.title).padding()
             
         }.frame(width: 385, height: 75 , alignment: .top).padding(.horizontal)
         
         Spacer().frame(height: 20)
             
-        
+        //Modal Appearance for Detail View
         VStack{
             
             if let dessert = viewModel.dessert {
@@ -36,36 +31,43 @@ struct DessertDetailView: View {
                 AsyncImage(url: URL(string:dessert.strMealThumb), scale: 2.0)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 325 , height: 100)
-                    .padding(.top , 90)
+                    .padding(.top , 90).padding(.bottom , 100)
                     
-                
+                //Dessert name and Origin
                 VStack{
                     
                     Text(dessert.strMeal)
                         .font(.subheadline).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .padding(.top , 125)
+                        .colorInvert()
                     
                     Text(dessert.strArea)
-                        .font(.callout)
+                        .font(.callout).colorInvert()
                     
-                }.frame(width: 325).padding(10)
+                }.frame(width: 250 , height: 30).padding(10).background(Color.purple)
+                    .clipShape(RoundedRectangle(cornerSize: /*@START_MENU_TOKEN@*/CGSize(width: 20, height: 10)/*@END_MENU_TOKEN@*/))
                 
+                //Scrollable Intstructions and Ingredients
                 ScrollView{
-                    
-                    VStack(alignment: .leading , spacing: 10 ){
-                        
-                        Text(dessert.strInstructions)
-                            .multilineTextAlignment(.center)
-                            .font(.body).padding()
-
-                    }.frame(width: 325)
-
+                    HStack{
+                        VStack(alignment: .leading , spacing: 10 ){
+                            Text("Instructions: ").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Text(dessert.strInstructions)
+                                .multilineTextAlignment(.center)
+                                .font(.body).padding()
+                            
+                            Text("Ingredients: ").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            
+                            //Iterates over the arrays provided by the endpoint to display
+                            ForEach(dessert.ingredients.indices , id: \.self) {index in
+                                HStack{
+                                    Text("\(dessert.ingredients[index])  ").fontWeight(.medium)
+                                    Text("\(dessert.measures[index])")
+                                }
+                            }
+                        }.frame(width: 325)
+                    }
                 }
-                
-                
             }
-            
-            
         }
         .frame(width: 325 , height: 600)
         .background(Color(.systemBackground))
@@ -73,12 +75,7 @@ struct DessertDetailView: View {
         .shadow(radius: 40)
         Spacer()
         
-        
-        
-        //Image
-        
-        //Body (instruct and ingredients)Scrollable
-        
+            //Change to task 
             .onAppear{
                 viewModel.getDessertDetails(idMeal: idMeal)
             }
