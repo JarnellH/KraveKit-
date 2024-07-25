@@ -26,6 +26,7 @@ struct RecipeView: View {
                         }
                     }
                     .padding(5)
+ 
                 }
                 
             }
